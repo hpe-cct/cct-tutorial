@@ -1,0 +1,5 @@
+output/
+target/
+.svn/
+*~
+.idea/
