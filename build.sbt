@@ -22,3 +22,7 @@ libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "2.2.6" % "test",
   "junit" % "junit" % "4.7" % "test"
 )
+
+resolvers += Resolver.bintrayRepo("cogexmachina", "maven")
+
+credentials += Credentials("Bintray", "dl.bintray.com", "hpe-cct-user", "5b702623a941bef832ee31b855366b84f8339338")
