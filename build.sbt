@@ -1,6 +1,6 @@
-name := "cogx-tutorial"
+name := "cct-tutorial"
 
-description := "Example code to go along with the CogX tutorial."
+description := "Example code to go along with the CCT tutorial."
 
 organizationName := "Hewlett Packard Labs"
 
@@ -17,14 +17,13 @@ fork in run := true
 parallelExecution in Test := false
 
 libraryDependencies ++= Seq(
-  "com.hpe.cct" %% "cogx-nn" % "2.0.0-alpha.1",
-  "com.hpe.cct" %% "cogx-sandbox" % "1.2.8",
+  "com.hpe.cct" %% "cct-nn" % "2.0.0-alpha.2",
+  "com.hpe.cct" %% "cct-sandbox" % "1.2.9",
   "org.scalatest" %% "scalatest" % "2.2.6" % "test",
   "junit" % "junit" % "4.7" % "test"
 )
 
 licenses += ("Apache-2.0", url("https://www.apache.org/licenses/LICENSE-2.0.html"))
 
-resolvers += Resolver.bintrayRepo("cogexmachina", "maven")
-
-credentials += Credentials("Bintray", "dl.bintray.com", "hpe-cct-user", "5b702623a941bef832ee31b855366b84f8339338")
+resolvers ++= Seq(Resolver.bintrayRepo("bchandle", "maven"),
+                  Resolver.bintrayRepo("hpe-cct", "maven"))
