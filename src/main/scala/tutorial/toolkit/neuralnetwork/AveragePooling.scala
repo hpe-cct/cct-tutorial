@@ -1,0 +1,35 @@
+/*
+ * (c) Copyright 2016 Hewlett Packard Enterprise Development LP
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package tutorial.toolkit.neuralnetwork
+
+import libcog._
+import toolkit.neuralnetwork.DifferentiableField
+
+object AveragePooling {
+  def apply(input: DifferentiableField, poolSize: Int = 3, stride: Int = 2): PlanarConvolution = {
+    require(poolSize > 0, "pool size must be positive")
+    require(stride >= 1, "stride must be >= 1")
+    require(poolSize % 2 == 1, "pool size must be odd")
+    require(input.forward.tensorOrder == 1, "input must be a vector field")
+
+    val elem = 1f / (poolSize * poolSize).toFloat
+    val boxFilter = ScalarField(poolSize, poolSize, (_, _) => elem)
+
+    PlanarConvolution(input, boxFilter, BorderZero, DownsampleOutputConvolution(stride))
+  }
+}
+
