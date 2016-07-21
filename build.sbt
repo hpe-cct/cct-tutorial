@@ -17,7 +17,7 @@ fork in run := true
 parallelExecution in Test := false
 
 libraryDependencies ++= Seq(
-  "com.hpe.cct" %% "cct-nn" % "2.0.0-alpha.2",
+  "com.hpe.cct" %% "cct-nn" % "2.0.0-alpha.2.2-SNAPSHOT",
   "com.hpe.cct" %% "cct-sandbox" % "1.2.9",
   "org.scalatest" %% "scalatest" % "2.2.6" % "test",
   "junit" % "junit" % "4.7" % "test"
