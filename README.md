@@ -17,7 +17,8 @@ development environment.
 The free Community Edition of IntelliJ is sufficient. Once you have IntelliJ
 installed, you just need to install the Scala plugin from the IntelliJ plugin
 manager. That will give you a full development environment for CCT applications.
-IntelliJ will pull in all necessary dependencies automatically.
+IntelliJ will pull in all necessary dependencies automatically.  For more detailed
+installation instructions go to [Download and Setup](https://github.com/hpe-cct/cct-tutorial/blob/master/DownloadAndSetup.md).
 
 A good first example to try is the `BackgroundSubtraction` application,
 available
