@@ -22,12 +22,11 @@ CCT is written in the Scala programming language which runs on the Java Virtual 
 The cct-tutorial currently has the following library dependencies.
 
 **cct-core** - This is the core library and API. It contains the compiler and runtime system necessary to optimize and 
-distribute a CCT application. This package is currently imported as `libcog`. The cct-core library also contains the visual 
-debugger, *cogdebugger*. 
+distribute a CCT application, the standard library, and the visual debugger. This package is currently imported as `libcog`.
 
 **cct-io** - This library provides a set of objects which can be used for getting data into and out of a running CCT 
-application using the field initialization, *sensor*, and *actuator* primatives that are part of the cct-core API.  
-For example, it has APIs to read an image file or movie file. This package is currently imported into some of the 
+application using the field initialization, *sensor* and *actuator* primatives that are part of the cct-core API.  
+For example, there are APIs to read an image file or movie file. This package is currently imported into some of the 
 tutorial examples as `cogio`.
 
 **cct-nn** - This library provides APIs to support deep learning and neural networks. This package is currently imported 
@@ -36,7 +35,7 @@ into some of the tutorial examples as `toolkit.neuralnetwork`.
 **cct-sandbox** - This library contains unstable CCT libraries for applications including signal processing and computer vision.
 
 **cogdebugger** - This is a UI Wrapper for debugging CCT applications. It allows developers to visualize the compute graph, 
-inspect the fields, and step through the compute graph. The visual debugger is part of the cct-core library, but the package 
+inspect the fields, and step through the compute graph. The visual debugger is part of the `cct-core` library, but the package 
 is imported separately as `cogdebugger`.
 
 ## Abstractions
@@ -95,7 +94,7 @@ The visual debugger is a graphical tool that allows you to step, reset, and "pee
 computation while it executes. Clicking on the blue box labeled "counter" in the left pane, opens the "counter" window in the 
 right-pane (as shown here). The "counter" window on the right shows that the "counter" field is a ScalarField with a size of 
 200x200. Placing the cursor over a point in the field will momentarily bring up a tooltip displaying the coordinates and value 
-at that point. In this case, value is "1.0" at the location (1,2) after stepping through the graph one time. The "Cycle" value 
+at that point. In this case, the value is "1.0" at the location (1,2) after stepping through the graph one time. The "Cycle" value 
 at the top shows how many steps have been taken, which in this case is "1". All 40,000 points have a value of "1" after 1 cycle. 
 The buttons in the top left allow you to control stepping through the graph. Clicking "Step 1" will add 1 to every point, which 
 is 40,000 additions. Clicking "Run" with a "0" in the adjacent box, steps through the graph until "Stop" is clicked.  Clicking 
