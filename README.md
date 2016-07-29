@@ -20,7 +20,7 @@ manager. That will give you a full development environment for CCT applications.
 IntelliJ will pull in all necessary dependencies automatically.  For more detailed
 installation instructions go to [Download and Setup](https://github.com/hpe-cct/cct-tutorial/blob/master/DownloadAndSetup.md).
 
-The [Getting Started](https://github.com/hpe-cct/cct-tutorial/blob/master/GettingStarted.md) page provides an introduction to the CCT platform using examples from the `cct-tutorial`.
+The [Getting Started](GettingStarted.md) page provides an introduction to the CCT platform using examples from the `cct-tutorial`.
 
 A draft of the CCT programming guide is available
 [here](http://hpe-cct.github.io/docs/CogProgrammingTutorial_4_1.pdf). Note that
