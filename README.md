@@ -20,9 +20,7 @@ manager. That will give you a full development environment for CCT applications.
 IntelliJ will pull in all necessary dependencies automatically.  For more detailed
 installation instructions go to [Download and Setup](https://github.com/hpe-cct/cct-tutorial/blob/master/DownloadAndSetup.md).
 
-A good first example to try is the `BackgroundSubtraction` application,
-available
-[here](https://github.com/hpe-cct/cct-tutorial/blob/master/src/main/scala/tutorial/cogio/BackgroundSubtraction.scala).
+The [Getting Started](GettingStarted.md) page provides an introduction to the CCT platform using examples from the `cct-tutorial`.
 
 A draft of the CCT programming guide is available
 [here](http://hpe-cct.github.io/docs/CogProgrammingTutorial_4_1.pdf). Note that
@@ -32,7 +30,7 @@ working name (Cog ex Machina or Cog).
 ## API Documentation
 
 CCT includes four user-visible components. The core provides the compiler, runtime, visual debugger, and standard library. 
-The I/O library includes several useful sensors for standard data types. This is a seperate module becuase it has significant
+The I/O library includes several useful sensors for standard data types. This is a separate module becuase it has significant
 dependencies. The NN library includes support for deep learning and similar gradient descent methods. The sandbox includes a 
 number of library routines that don't cluster into coarse enough chunks to justify independent libraries. All four modules 
 are included as dependencies for the tutorial.
