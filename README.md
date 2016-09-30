@@ -17,7 +17,7 @@ The [Getting Started](https://hpe-cct.github.io/gettingStarted) page provides an
 
 The [CCT Programming Guide](https://hpe-cct.github.io/programmingGuide) provides more in-depth documentation of the CCT platform. Note that this is an early document, and still refers to CCT by its original internal working name (Cog ex Machina or Cog).
 
-THese and other CCT documentation pages are located [here](https://hpe-cct.github.io). 
+These and other CCT documentation pages are located [here](https://hpe-cct.github.io). 
 
 
 
