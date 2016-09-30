@@ -27,13 +27,13 @@ A draft of the CCT programming guide is available
 this is an early document, and still refers to CCT by its original internal
 working name (Cog ex Machina or Cog).
 
-Click [here]((https://hpe-cct.github.io) for the CCT Home page. 
+Click [here](https://hpe-cct.github.io) for the CCT Home page. 
 
 ## API Documentation
 
-CCT includes four user-visible components. The core (cct-core)provides the compiler, runtime, visual debugger, and standard library. 
-The I/O library (cct-io) includes several useful sensors for standard data types. This is a separate module becuase it has significant
-dependencies. The NN library (cct-nn) includes support for deep learning and similar gradient descent methods. The sandbox (cct-sandbox) includes a 
+CCT includes four user-visible components. The core (*cct-core*)provides the compiler, runtime, visual debugger, and standard library. 
+The I/O library (*cct-io*) includes several useful sensors for standard data types. This is a separate module becuase it has significant
+dependencies. The NN library (*cct-nn*) includes support for deep learning and similar gradient descent methods. The sandbox (*cct-sandbox*) includes a 
 number of library routines that don't cluster into coarse enough chunks to justify independent libraries. All four modules 
 are included as dependencies for the tutorial.
 
