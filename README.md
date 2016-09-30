@@ -6,28 +6,20 @@ language (DSL) designed to maximize ease of programmability, while preserving
 the semantics necessary to generate efficient GPU code. CCT is particularly
 powerful for applications that require combining deep learning techniques with
 more conventional signal processing or computer vision algorithms. The CCT DSL
-lives inside the Scala language, on top of the Java Virtual Machine (JVM).
+lives inside the *Scala* language, on top of the Java Virtual Machine (JVM).
 
 To get started, you’ll need a machine with a relatively current NVIDIA GPU and a
 1.8 JDK installed. While CCT emits OpenCL GPU kernels and thus may run on AMD or
-Intel GPUs as well, these are not regularly tested hardware configurations.
-[IntelliJ IDEA](https://www.jetbrains.com/idea/) is the recommended option for a
-development environment.
+Intel GPUs as well, these are not regularly tested hardware configurations. For more detailed
+installation instructions go to the [Download and Setup](https://hpe-cct.github.io/downloadAndSetup) page.
 
-The free Community Edition of IntelliJ is sufficient. Once you have IntelliJ
-installed, you just need to install the Scala plugin from the IntelliJ plugin
-manager. That will give you a full development environment for CCT applications.
-IntelliJ will pull in all necessary dependencies automatically.  For more detailed
-installation instructions go to [Download and Setup](https://hpe-cct.github.io/downloadAndSetup).
+The [Getting Started](https://hpe-cct.github.io/gettingStarted) page provides an introduction to the CCT platform using examples from this `cct-tutorial`.
 
-The [Getting Started](https://hpe-cct.github.io/gettingStarted) page provides an introduction to the CCT platform using examples from the `cct-tutorial`.
+The [CCT Programming Guide](https://hpe-cct.github.io/programmingGuide) provides more in-depth documentation of the CCT platform. Note that this is an early document, and still refers to CCT by its original internal working name (Cog ex Machina or Cog).
 
-A draft of the CCT programming guide is available
-[here](https://hpe-cct.github.io/programmingGuide). Note that
-this is an early document, and still refers to CCT by its original internal
-working name (Cog ex Machina or Cog).
+CCT documentation pages are located [here](https://hpe-cct.github.io). 
 
-Click [here](https://hpe-cct.github.io) for the CCT Home page. 
+
 
 ## API Documentation
 
