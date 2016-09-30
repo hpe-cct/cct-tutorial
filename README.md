@@ -13,11 +13,11 @@ To get started, you’ll need a machine with a relatively current NVIDIA GPU and
 Intel GPUs as well, these are not regularly tested hardware configurations. For more detailed
 installation instructions go to the [Download and Setup](https://hpe-cct.github.io/downloadAndSetup) page.
 
-The [Getting Started](https://hpe-cct.github.io/gettingStarted) page provides an introduction to the CCT platform using examples from this `cct-tutorial`.
+The [Getting Started](https://hpe-cct.github.io/gettingStarted) page provides an introduction to the CCT platform using examples from `cct-tutorial`.
 
 The [CCT Programming Guide](https://hpe-cct.github.io/programmingGuide) provides more in-depth documentation of the CCT platform. Note that this is an early document, and still refers to CCT by its original internal working name (Cog ex Machina or Cog).
 
-CCT documentation pages are located [here](https://hpe-cct.github.io). 
+THese and other CCT documentation pages are located [here](https://hpe-cct.github.io). 
 
 
 
