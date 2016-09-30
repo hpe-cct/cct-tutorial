@@ -18,26 +18,28 @@ The free Community Edition of IntelliJ is sufficient. Once you have IntelliJ
 installed, you just need to install the Scala plugin from the IntelliJ plugin
 manager. That will give you a full development environment for CCT applications.
 IntelliJ will pull in all necessary dependencies automatically.  For more detailed
-installation instructions go to [Download and Setup](https://github.com/hpe-cct/cct-tutorial/blob/master/DownloadAndSetup.md).
+installation instructions go to [Download and Setup](https://hpe-cct.github.io/downloadAndSetup).
 
-The [Getting Started](GettingStarted.md) page provides an introduction to the CCT platform using examples from the `cct-tutorial`.
+The [Getting Started](https://hpe-cct.github.io/gettingStarted) page provides an introduction to the CCT platform using examples from the `cct-tutorial`.
 
 A draft of the CCT programming guide is available
-[here](http://hpe-cct.github.io/docs/CogProgrammingTutorial_4_1.pdf). Note that
+[here](https://hpe-cct.github.io/programmingGuide). Note that
 this is an early document, and still refers to CCT by its original internal
 working name (Cog ex Machina or Cog).
 
+Click [here]((https://hpe-cct.github.io) for the CCT Home page. 
+
 ## API Documentation
 
-CCT includes four user-visible components. The core provides the compiler, runtime, visual debugger, and standard library. 
-The I/O library includes several useful sensors for standard data types. This is a separate module becuase it has significant
-dependencies. The NN library includes support for deep learning and similar gradient descent methods. The sandbox includes a 
+CCT includes four user-visible components. The core (cct-core)provides the compiler, runtime, visual debugger, and standard library. 
+The I/O library (cct-io) includes several useful sensors for standard data types. This is a separate module becuase it has significant
+dependencies. The NN library (cct-nn) includes support for deep learning and similar gradient descent methods. The sandbox (cct-sandbox) includes a 
 number of library routines that don't cluster into coarse enough chunks to justify independent libraries. All four modules 
 are included as dependencies for the tutorial.
 
-Scaladoc documentation for these modules is available here:
+Scaladocs for these modules is available here:
 
-  * [cct-core](https://hpe-cct.github.io/scaladoc/cct-core_2.11-5.0.0-alpha.3/)
-  * [cct-io](https://hpe-cct.github.io/scaladoc/cct-io_2.11-0.8.7/)
-  * [cct-nn](https://hpe-cct.github.io/scaladoc/cct-nn_2.11-2.0.0-alpha.2/)
-  * [cct-sandbox](https://hpe-cct.github.io/scaladoc/cct-sandbox_2.11-1.2.9/)
+  * [cct-core](https://hpe-cct.github.io/scaladoc/cct-core_2.11-5.0.0-alpha.3/#package)
+  * [cct-io](https://hpe-cct.github.io/scaladoc/cct-io_2.11-0.8.7/#cogio.package)
+  * [cct-nn](https://hpe-cct.github.io/scaladoc/cct-nn_2.11-2.0.0-alpha.2/#toolkit.neuralnetwork.package)
+  * [cct-sandbox](https://hpe-cct.github.io/scaladoc/cct-sandbox_2.11-1.2.9/#toolkit.package)
