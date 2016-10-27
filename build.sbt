@@ -15,13 +15,12 @@ fork in run := true
 parallelExecution in Test := false
 
 libraryDependencies ++= Seq(
-  "com.hpe.cct" %% "cct-nn" % "2.0.0-alpha.3",
-  "com.hpe.cct" %% "cct-sandbox" % "1.2.10",
+  "com.hpe.cct" %% "cct-nn" % "2.0.0-alpha.4",
+  "com.hpe.cct" %% "cct-sandbox" % "1.2.11",
   "org.scalatest" %% "scalatest" % "2.2.6" % "test",
   "junit" % "junit" % "4.7" % "test"
 )
 
 licenses += ("Apache-2.0", url("https://www.apache.org/licenses/LICENSE-2.0.html"))
 
-resolvers ++= Seq(Resolver.bintrayRepo("bchandle", "maven"),
-                  Resolver.bintrayRepo("hpe-cct", "maven"))
+resolvers += Resolver.jcenterRepo
